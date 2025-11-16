@@ -4,27 +4,27 @@ Una aplicación web completa de **gestión de vehículos** desarrollada con **Dj
 
 ## 📋 Características
 
-✅ **CRUD Completo**
+**CRUD Completo**
 - Crear nuevos vehículos
 - Listar vehículos registrados
 - Editar información de vehículos
 - Eliminar vehículos con confirmación
 
-✅ **Interfaz de Usuario**
+**Interfaz de Usuario**
 - Diseño responsivo con Bootstrap 4
 - Navbar de navegación
 - Tablas interactivas
 - Modales de confirmación
 - Formularios validados
 
-✅ **Funcionalidades**
+**Funcionalidades**
 - Base de datos SQLite
 - Panel de administración Django
 - Validación de formularios
 - Mensajes de éxito/error
 - Gestión de colores (ROJO, AZUL, VERDE)
 
-## 🛠️ Requisitos
+##  Requisitos
 
 - Python 3.11+
 - Django 5.2.8
@@ -75,12 +75,3 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
-
-El servidor estará disponible en: **http://127.0.0.1:8000/**
-
----
-
-**¡Feliz desarrollo! 🎉**
-
-Para más información sobre Django, visita: [Django Documentation](https://docs.djangoproject.com/)
-
