@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">¡Bienvenido!</h1>
+    <p class="lead">Esta es una aplicación CRUD de vehículos desarrollada con Django.</p>
+    <hr class="my-4">
+    <p>Comienza a gestionar tus vehículos desde el menú de navegación.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'list' %}" role="button">Ver Vehículos</a>
+    <a class="btn btn-success btn-lg" href="{% url 'create' %}" role="button">Agregar Vehículo</a>
+</div>
+{% endblock %}

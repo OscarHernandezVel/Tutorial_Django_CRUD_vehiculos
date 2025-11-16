@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}{% if form.instance.id %}Editar Vehículo{% else %}Crear Vehículo{% endif %}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h1 class="mb-4">{% if form.instance.id %}Editar Vehículo{% else %}Crear Vehículo{% endif %}</h1>
+
+        <form method="POST" class="form-group">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="{{ form.placa.id_for_label }}">Placa</label>
+                {{ form.placa }}
+                {% if form.placa.errors %}
+                    <div class="alert alert-danger mt-2">{{ form.placa.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.marca.id_for_label }}">Marca</label>
+                {{ form.marca }}
+                {% if form.marca.errors %}
+                    <div class="alert alert-danger mt-2">{{ form.marca.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.color.id_for_label }}">Color</label>
+                {{ form.color }}
+                {% if form.color.errors %}
+                    <div class="alert alert-danger mt-2">{{ form.color.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.modelo.id_for_label }}">Modelo</label>
+                {{ form.modelo }}
+                {% if form.modelo.errors %}
+                    <div class="alert alert-danger mt-2">{{ form.modelo.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="form-group mt-4">
+                <button type="submit" class="btn btn-primary">
+                    {% if form.instance.id %}Actualizar{% else %}Crear{% endif %}
+                </button>
+                <a href="{% url 'list' %}" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
