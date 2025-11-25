@@ -1,8 +1,8 @@
-# 🚗 Tutorial Django CRUD Vehículos
+# Tutorial Django CRUD Vehículos
 
 Una aplicación web completa de **gestión de vehículos** desarrollada con **Django 5.2**, demostrando operaciones CRUD (Crear, Leer, Actualizar, Eliminar) con una interfaz moderna usando **Bootstrap 4**.
 
-## 📋 Características
+## Características
 
 **CRUD Completo**
 - Crear nuevos vehículos
@@ -30,48 +30,47 @@ Una aplicación web completa de **gestión de vehículos** desarrollada con **Dj
 - Django 5.2.8
 - pip (gestor de paquetes Python)
 
-## 📦 Instalación
+## Instalación
 
 ### 1. Clonar el repositorio
 
-```bash
-git clone <tu-repositorio-url>
+bash
+
+git clone TutorIal_Django_CRUD_Vehiculos
 cd Tutorial_Django_CRUD_vehiculos
-```
+
 
 ### 2. Crear entorno virtual
 
-```bash
+bash
 # Windows
 python -m venv venv
 venv\Scripts\activate
 
-# macOS/Linux
-python -m venv venv
-source venv/bin/activate
-```
 
 ### 3. Instalar dependencias
 
-```bash
+bash
 pip install -r requirements.txt
-```
+
 
 ### 4. Ejecutar migraciones
 
-```bash
+bash
 cd crud_example
+
 python manage.py migrate
-```
+
 
 ### 5. Crear superusuario (opcional, para el admin)
 
-```bash
+bash
 python manage.py createsuperuser
-```
+
 
 ### 6. Iniciar el servidor
 
-```bash
+bash
 python manage.py runserver
-```
+
+
